@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & display=swap');  
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:ital@1 & display=swap');   
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & família= Montserrat:wght@600 & display=swap');
+
+:root {
+    --cor-primaria: #016A70;
+    --cor-secundaria: #FFFFDD;
+    --cor-teciaria: #D2DE32; 
+    --cor-hover: #A2C579;   
+    --fonte-primaria: 'Krona One', sem serifa;
+    --fonte-secundaria:'Montserrat', sem serifa;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-teciaria);
+    text-decoration: none;
+}
+ .Titulo-destaque{
+    color: var(--cor-hover);
+
+ }
+ .apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+
+}
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+.apresentacao__links_link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px ridge var(--cor-hover);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-teciaria);
+    font-family: var(--fonte-secundaria);
+}
+.apresentacao__subtitulo__links{
+    font-family: var(--fonte-primaria);
+    font-family: 400;
+    font-size: 1.5rem;
+}
+.apresentacao__links_link:hover{
+    background-color: var(--cor-secundaria);
+}
+.apresentacao__imagem{
+    width: 50%;
+}
+.rodape{
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    background-color: var(--cor-teciaria);
+}
+.destaque{
+    color: var(--cor-secundaria);
+
+}
+.destaque__curriculo{
+    font-size: 2.5rem;
+    font-family: var(--fonte-primaria);
+
+}
+@media (max-widht: 1200px) {
+    .cabecalho{
+        padding: 10%;
+
+    }
+    .cabecalho__menu{
+        justify-content: center;
+        padding: 5%;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .apresentacao__conteudo{
+        width: 0%;
+    }
+}
